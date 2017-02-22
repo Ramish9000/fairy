@@ -1,0 +1,29 @@
+<form name="main.form" ng-submit="main.uploadSingle()">
+
+	<ul>
+
+		<input type="file"	ngf-select ng-model="main.file" name="file">
+
+		<select ng-model="main.clothingType">
+
+			<option value="top">Top</option>
+
+			<option value="bottom">Bottom</option>
+
+		</select>
+
+		<button type="submit" name="submit">
+
+			Submit
+
+		</button>
+
+	</ul>
+
+</form>
+
+<div ng-repeat="clothing in main.usersClothing">
+
+	<img ng-src="{{clothing.image}}" class="clothing-img">
+
+</div>

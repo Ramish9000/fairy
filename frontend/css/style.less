@@ -1,0 +1,510 @@
+body {
+  font-family: initial;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+
+@dark_blue: #232947;
+@teal: #26a69a;
+@maroon: #A7383E;
+
+.NoPadding {
+  padding: 0px;
+}
+
+.Dynamic_Background {
+  background-color: @dark_blue;
+}
+
+.Block {
+  display: block;
+}
+
+@lg : ~"only screen and (min-width: 1200px)";
+@md : ~"only screen and (max-width: 1199px)";
+@sml : ~"only screen and (max-width: 991px)";
+@mob : ~"only screen and (max-width: 767px)";
+
+
+@font-face {
+  font-family: caption;
+  src: url(./fonts/allura/Allura-Regular.ttf) format('truetype');
+  font-weight: bold;
+}
+
+
+.Welcome_Page {
+
+    text-align: center;
+    background-color: @dark_blue;
+
+    .Welcome_Centered_Container {
+
+        text-align: center;
+        overflow: hidden;
+
+        @media @mob {
+
+            padding-top: 30px;
+
+        }
+
+        .Welcome_Logo--Container {
+
+            img.Welcome_Logo {
+
+                @media @lg {
+
+                    width: 280px;
+
+                }
+
+                @media @md {
+
+                    width: 280px;
+
+                }
+
+                @media @mob {
+
+                    width: 250px;
+
+                }
+
+            }
+
+        }
+
+        .Welcome_Caption--Container {
+
+            h3.Welcome_Caption {
+
+                font-family: 'caption';
+                color: white;
+
+                @media @lg {
+
+                    font-size: 50px;
+
+                }
+
+                @media @md {
+
+                    font-size: 50px;
+
+                }
+
+                @media @mob {
+
+                    font-size: 40px;
+
+                }
+
+            }
+
+        }
+
+        .Welcome_Buttons--Container {
+
+            text-transform: uppercase;
+            overflow: hidden;
+
+            @media @lg {
+
+                padding: 30px;
+
+            }
+
+            @media @md {
+
+                padding: 30px;
+
+            }
+
+            @media @mob {
+
+                padding: 30px;
+
+            }
+
+            a {
+
+                border: 1px solid white;
+                border-radius: 7px;
+                color: white;
+                text-decoration: none;
+
+                @media @lg {
+
+                    padding: 15px 40px;
+                    margin-left: 10px;
+
+
+                }
+
+                @media @md {
+
+                    padding: 20px 30px;
+                    margin-left: 10px;
+
+
+                }
+
+                @media @mob {
+
+                    padding: 15px 25px;
+                    margin-right: 2px;
+
+
+                }
+
+            }
+
+            a:hover {
+
+                background-color: white;
+                color: @dark_blue;
+
+            }
+
+            form {
+
+                margin: auto;
+                color: white;
+                overflow: hidden;
+
+                @media @lg {
+
+                    width: 300px
+
+                }
+
+                @media @md {
+
+                    width: 300px
+
+                }
+
+                @media @sml {
+
+                    width: 600px
+
+                }
+
+                @media @mob {
+
+                    width: 100%;
+
+                }
+
+                .Block1 {
+
+                    overflow: hidden;
+                    padding-bottom: 2px;
+
+                }
+
+                .Block2 {
+
+                    padding-bottom: 20px;
+
+                }
+
+                input {
+
+                    background-color: transparent;
+                    color: white;
+                    border: 0;
+                    font-family: initial;
+
+                    border-bottom: 1px solid #9e9e9e;
+                    transition: all .3s;
+
+                    float: left;
+
+                    @media @lg {
+
+                        width: 100%;
+                        margin-bottom: 25px;
+                        padding-bottom: 15px;
+
+                        font-size: 16px;
+
+                    }
+
+                    @media @md {
+
+                        width: 100%;
+                        margin-bottom: 25px;
+                        padding-bottom: 15px;
+
+                        font-size: 14px;
+
+                    }
+
+                    @media @mob {
+
+                        width: 100%;
+                        padding: 10px;
+
+                        float: none;
+
+                    }
+
+                }
+
+                input.mr{
+
+                    margin-right: 30px;
+
+                }
+
+                input:focus {
+
+                    outline: none;
+                    border-bottom-color: @teal;
+                    box-shadow: 0 1px 0 0 @teal;
+
+                }
+
+                input::-webkit-input-placeholder {
+
+                    color: #d3d3d3;
+
+                }
+
+
+                button {
+
+                    background-color: transparent;
+                    background-image: url('../img/shooting_stars.gif');
+                    color: white;
+                    border: none;
+                    font-weight: bold;
+
+                    border: 1px solid white;
+
+                    @media @lg {
+
+                        width: 100%;
+                        padding: 20px 30px;
+
+                    }
+
+                    @media @md {
+
+                        width: 570px;
+                        padding: 20px 30px;
+                        margin-left: 5px;
+
+                    }
+
+                    @media @mob {
+
+                        width: 100%;
+                        padding: 15px 25px;
+                        margin-left: 0;
+
+                    }
+
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.navbar {
+
+    background-color: @dark_blue;
+
+    .collapse, .navbar-collapse {
+
+        @media @lg {
+
+            padding: 0 50px;
+            
+        }
+
+        @media @md {
+
+        }
+
+        @media @sml {
+
+        }
+
+        @media @mob {
+
+        }
+
+        ul.navbar-nav, ul.nav {
+
+            li {
+
+                text-align: center;
+
+                @media @lg {
+
+                    width: 160px;
+                    padding-top: 75px;
+
+                }
+
+                @media @md {
+
+                }
+
+                @media @sml {
+
+                }
+
+                @media @mob {
+
+                }
+
+                a {
+
+                    color: white;
+                    border: 1px solid white;
+                    border-radius: 5px;
+
+                    @media @lg {
+
+                        font-size: 16px;
+
+                    }
+
+                    @media @md {
+
+                    }
+
+                    @media @sml {
+
+                    }
+
+                    @media @mob {
+
+                    }
+
+                }
+
+                a:hover {
+
+                    background-color: @maroon;
+                    transition: all .3s ease-out;
+
+                }
+
+            }
+
+            li.li_pr {
+
+                @media @lg {
+
+                    margin-right: 80px;
+
+                }
+
+                @media @md {
+
+
+
+                }
+
+                @media @sml {
+
+
+
+                }
+
+                @media @mob {
+
+
+
+                }
+
+                
+
+            }
+
+            li.logo_li {
+
+                padding: 0;
+                overflow: hidden;
+                width: unset;
+
+                @media @lg {
+
+                    margin: -15px 50px 0 50px; 
+
+                }
+
+                @media @md {
+
+                }
+
+                @media @sml {
+
+                }
+
+                @media @mob {
+
+                }
+
+                a {
+
+                    border: 0;
+                    overflow: hidden;
+
+                    img {
+
+                        width: 100%;
+
+                        @media @lg {
+
+                            width: 200px;
+
+                        }
+
+                        @media @md {
+
+                        }
+
+                        @media @sml {
+
+                        }
+
+                        @media @mob {
+
+                        }
+
+                    }
+
+                }
+
+                a:hover, a:focus {
+
+                    background-color: transparent;
+                    border: none;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
